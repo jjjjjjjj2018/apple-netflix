@@ -5,10 +5,10 @@ import List from './List';
 import './App.css';
 
 const App = (props) => {
-
-  useEffect(() => {
+  useLayoutEffect(() => {
     props.getAll();
   }, []);
+
   const { mylist, recommendations, error, isLoading } = props;
 
   return (
