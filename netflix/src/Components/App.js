@@ -1,4 +1,4 @@
-import React, { useLayoutEffect } from 'react';
+import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { getAll, removeFromList, moveToMyList } from '../redux/actions';
 import List from './List';
