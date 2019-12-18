@@ -9,7 +9,7 @@ const App = (props) => {
     props.getAll();
   }, []);
 
-  const { mylist, recommendations, error, isLoading } = props;
+  const { mylist, recommendations, error, isLoading, removeFromList, moveToMyList } = props;
 
   return (
     <div className="container" >
@@ -22,13 +22,13 @@ const App = (props) => {
           <List
             name='My List'
             list={mylist || []}
-            click={props.removeFromList}
+            click={removeFromList}
             btnName='Remove'
           />
           <List
             name='Recommendations'
             list={recommendations || []}
-            click={props.moveToMyList}
+            click={moveToMyList}
             btnName='Add to MyList'
           />
           <div className='list-title-container'>
@@ -38,7 +38,7 @@ const App = (props) => {
                   <li key={item.id} >
                     <font color='white'>{item.title}</font>
                   </li>
-                )
+                );
               })}</ul>
             }
           </div>
@@ -46,7 +46,6 @@ const App = (props) => {
       }
     </div>
   );
-
 }
 
 const mapStateToProps = ({ mylist, recommendations, error, isLoading }) => ({

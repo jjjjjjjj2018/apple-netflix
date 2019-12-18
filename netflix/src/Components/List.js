@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css';
 
 const List = (props) => {
-
     return (
         <div>
             <font color="white">{props.name}</font>
@@ -16,7 +15,7 @@ const List = (props) => {
                                 <button className='button' onClick={() => props.click(item.id)}>{props.btnName}</button>
                             </div>
                         </li>
-                    )
+                    );
                 })}
             </ul>
         </div>
