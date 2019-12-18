@@ -5,7 +5,7 @@ import List from './List';
 import './App.css';
 
 const App = (props) => {
-  useLayoutEffect(() => {
+  useEffect(() => {
     props.getAll();
   }, []);
 
