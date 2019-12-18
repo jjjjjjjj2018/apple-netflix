@@ -46,7 +46,7 @@ const App = (props) => {
       }
     </div>
   );
-}
+};
 
 const mapStateToProps = ({ mylist, recommendations, error, isLoading }) => ({
   mylist, recommendations, error, isLoading
@@ -64,6 +64,6 @@ const mapDispatchToProps = (dispatch) => {
       dispatch(moveToMyList(id));
     }
   }
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);

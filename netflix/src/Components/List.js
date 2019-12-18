@@ -20,6 +20,6 @@ const List = (props) => {
             </ul>
         </div>
     );
-}
+};
 
 export default List;
