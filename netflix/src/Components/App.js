@@ -49,7 +49,9 @@ const App = (props) => {
 
 }
 
-const mapStateToProps = ({ mylist, recommendations, error, isLoading }) => ({ mylist, recommendations, error, isLoading })
+const mapStateToProps = ({ mylist, recommendations, error, isLoading }) => ({
+  mylist, recommendations, error, isLoading
+});
 
 const mapDispatchToProps = (dispatch) => {
   return {
